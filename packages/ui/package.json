@@ -1,7 +1,7 @@
 {
   "name": "ui",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "types": "dist/types/index.d.ts",
   "scripts": {
@@ -11,6 +11,5 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  },
-  "dependencies": {}
+  }
 }
