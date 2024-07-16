@@ -1,0 +1,62 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:ui": "lerna run --scope ui storybook --stream",
+    "build:ui": "lerna run --scope ui build --stream",
+    "test:ui": "lerna run --scope ui test --stream",
+    "build": "lerna run build --stream",
+    "test": "NODE_ENV=test jest --coverage"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-react": "^7.22.3",
+    "@babel/preset-typescript": "^7.21.5",
+    "@storybook/addon-actions": "^7.0.18",
+    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/addon-interactions": "^7.0.18",
+    "@storybook/addon-links": "^7.0.18",
+    "@storybook/addon-styling": "^1.0.8",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/builder-vite": "^7.0.18",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^7.0.18",
+    "@storybook/react-vite": "^7.0.18",
+    "@storybook/testing-library": "^0.1.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "babel-jest": "^29.5.0",
+    "babel-loader": "^8.3.0",
+    "eslint": "^8.41.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "eslint-plugin-storybook": "^0.6.12",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "lerna": "^6.5.1",
+    "path": "^0.12.7",
+    "prettier": "^2.8.8",
+    "prop-types": "^15.8.1",
+    "sass": "^1.62.1",
+    "storybook": "^7.0.18",
+    "storybook-addon-mock": "^4.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  }
+}
